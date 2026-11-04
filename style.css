@@ -1,0 +1,31 @@
+:root {
+    --ink: #ffffff;
+    --paper: #f4f4f4;
+    --accent: steelblue;
+}
+
+box.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 25px;
+}
+
+.item {
+    width: 200px;
+    padding: 20%;
+    background-color: var(--accent);
+    color: var(--ink);
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .boxes {
+        flex-wrap: nowrap;
+    }
+}
